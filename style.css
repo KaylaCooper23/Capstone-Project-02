@@ -1,0 +1,117 @@
+body {
+    background-color: #F8E8EE;
+}
+
+.container-1 {
+    background: linear-gradient(300deg, #6B7B8E, #ACDEAA, #8FBBAF);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.container-2 {
+    background: linear-gradient(300deg, #6B7B8E, #ACDEAA, #8FBBAF);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.title-text {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 50pt;
+}
+
+.second {
+    font-family: 'Lora', serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    row-gap: 3rem;
+    column-gap: 3rem;
+}
+
+@media (max-width:480px) {
+  .grid-container {
+      width: auto;
+      grid-template-columns: 0.5fr;
+      margin: 10px;
+  }
+}
+
+.youtube {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.coding {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 40px;
+}
+
+@media (max-width: 480) {
+  .carousel-inner img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(1, 1fr, 1fr);
+    width: 50%;
+    margin: 100px auto 100px auto;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+.link {
+    padding-top: 3rem;
+}
